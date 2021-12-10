@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 80%;
+}
+body{
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    /* border: 2px solid gold; */
+    display: flex;
+    width: 50rem;
+    
+}
+.section1{
+    width: 50%;
+    background-color: #013243;
+    border-radius: 1rem 0 0 1rem;
+}
+.heading1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 2.2rem;
+}
+.description1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    color: #86bfd3;
+    text-align: center;
+    margin-top: .4rem;
+}
+.mockup{
+    width: 25rem;
+    margin-top: -6rem;
+    margin-bottom: -.29rem;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.section2{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 0rem 1rem 1rem 0;
+    padding: 0 2.5rem;
+}
+.heading2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.2rem;
+    /* color: #fff; */
+    /* text-align: center; */
+    margin-top: 2.2rem;
+}
+.form{
+    margin: 1.5rem 0;
+   
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+}
+.input label{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.input input{
+    font-family: 'Roboto',sans-serif;
+    padding: 1rem 1rem;
+    border: 1px solid #8d8d8d;
+    color: #8d8d8d;
+    border-radius: .2rem;
+    margin-top: .4rem;
+    width: 17rem;
+}
+.input input::placeholder{
+    color: #8d8d8d;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 18.6rem;
+    margin-top: 1rem;
+}
+.checkbox-description{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3rem;
+    width: 17rem;
+}
+.checkbox-description a{
+    color: #013243;
+    font-weight: 700;
+}
+.btn{
+    width: 19rem;
+    border: none;
+    background-color: #013243;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    border-radius:.3rem ;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.btn:hover{
+    background-color: #034257;
+}
+@media (min-width:391px) and (max-width:680px){
+    body{
+        /* background-image: none; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 160vh;
+       
+    }
+    .wrapper{
+        
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        /* border: 2px solid rebeccapurple; */
+        width: auto;
+    }
+    .section1{
+        width: 30rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .mockup{
+        margin-left: 2rem;
+    }
+    .section2{
+        border-radius: 0 0 1rem 1rem;
+        height: 32rem;
+        /* padding: 0 2rem 0 3.5rem; */
+        display: flex;
+        align-items: center;
+        width: 25rem;
+        justify-content: center;
+
+    }
+    .section2-content{
+       
+       margin-top: -2rem;
+    }
+}
+@media  (max-width:390px){
+    body{
+        background-image: none;
+        
+        width: 100%;
+        /* height: 160vh; */
+       
+    }
+    .wrapper{
+        
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .section1{
+        width: 31rem;
+        border-radius: 0rem 0rem 0 0;
+    }
+    .mockup{
+        margin-left: 2rem;
+        width: 27rem;
+    }
+    .section2{
+        border-radius: 0 0 0rem 0rem;
+        height: 32rem;
+        /* padding: 0 2rem 0 3.5rem; */
+        display: flex;
+        align-items: center;
+        width: 25rem;
+        justify-content: center;
+
+    }
+    .section2-content{
+       
+       /* margin-top: -2rem; */
+    }
+    .btn{
+        margin-bottom: 3.5rem;
+        margin-top: 1rem;
+    }
+}
